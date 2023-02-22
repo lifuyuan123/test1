@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
-    id 'maven-publish'
+    id 'maven-publish'//上传插件
 }
 
 afterEvaluate {
@@ -12,9 +12,9 @@ afterEvaluate {
                 // Applies the component for the release build variant.
                 from components.release
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'com.lfy.test1'
-                artifactId = 'lfy'
-                version = '1.0.1'
+                groupId = 'com.lfy.test1'//项目目录即可
+                artifactId = 'test1'//可以理解为项目唯一标识  项目名
+                version = '1.0.1'//版本号
             }
         }
     }
